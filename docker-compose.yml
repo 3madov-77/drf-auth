@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    command: gunicorn programing_stories.wsgi:application --bind 0.0.0.0:8003 --workers 4
+    volumes:
+      - .:/code
+    ports:
+      - "8003:8003"
+    depends_on:
+      - db
+  db:
+    image: postgres:11
+    environment:
+      - 'POSTGRES_HOST_AUTH_METHOD=trust'
