@@ -16,8 +16,9 @@
 <hr>
 
 # Notes:
-full python server API, that uses 'Django' and 'REST API' framwork, with 'Token' Authentication & ready to Production..
-it also conected with docker
+- full python server API, that uses 'Django' and 'REST API' framwork, with 'Token' Authentication & ready to Production..
+- it also conected with docker
+- skiped the defult 'DataBase'(sqlite) and used 'postgresql_11'
 
 - it had 5 main roots: 
 
