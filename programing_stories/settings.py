@@ -46,13 +46,13 @@ INSTALLED_APPS = [
     'whitenoise.runserver_nostatic',
     'django.contrib.staticfiles',
     'post_story',
-    'corsheadrs',
+    'corsheaders', 
     'rest_framework',
 
 ]
 
 MIDDLEWARE = [
-    'corsheadrs.middleware.CorsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
